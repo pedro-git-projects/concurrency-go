@@ -10,4 +10,6 @@ grepfiles:
 grepdir: 
 	go run ./src/*.go txt1 ./src/exercises/ch2/assets/
 
+grepdirrc:
+	go run ./src/*.go Plainview ./src/exercises/ch2/assets/
 
