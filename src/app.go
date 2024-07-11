@@ -17,6 +17,7 @@ func New() *App {
 	list := NewExerciseList()
 	list.AddExercise("catfiles", ch2.Catfiles)
 	list.AddExercise("grepfiles", ch2.Grepfiles)
+	list.AddExercise("grepdir", ch2.Grepdir)
 	return &App{
 		exerciseList: list,
 		reader:       bufio.NewReader(os.Stdin),
