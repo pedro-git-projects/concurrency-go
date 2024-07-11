@@ -15,7 +15,7 @@ import (
 
 // go run catfiles.go txtfile1 txtfile2 txtfile3
 
-func getFileContents(filename string) (string, error) {
+func getFileContentsStr(filename string) (string, error) {
 	b, err := os.ReadFile(filename)
 	if err != nil {
 		return "", err
@@ -25,7 +25,7 @@ func getFileContents(filename string) (string, error) {
 }
 
 func printFileContents(filename string) error {
-	c, err := getFileContents(filename)
+	c, err := getFileContentsStr(filename)
 	if err != nil {
 		return err
 	}

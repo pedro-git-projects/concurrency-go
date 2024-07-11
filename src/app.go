@@ -16,6 +16,7 @@ type App struct {
 func New() *App {
 	list := NewExerciseList()
 	list.AddExercise("catfiles", ch2.Catfiles)
+	list.AddExercise("grepfiles", ch2.Grepfiles)
 	return &App{
 		exerciseList: list,
 		reader:       bufio.NewReader(os.Stdin),
